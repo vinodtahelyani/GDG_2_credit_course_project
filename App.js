@@ -64,7 +64,7 @@ var App = React.createClass({
   },
   componentWillMount: function() {
     
-    fetch(`https://api.forecast.io/forecast/${KEY}/45.523220,-122.668752`)
+    fetch(`https://api.forecast.io/forecast/${KEY}/21.2012061,81.36310189999999`)
       .then(res => res.json())
       .then(resJson => this.setState({
         temperature: resJson.currently.temperature,
